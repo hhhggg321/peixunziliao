@@ -14,13 +14,6 @@
     
 </head>
 <style>
-    .title{
-        margin-top: 40px;
-    }
-    .article-box{
-        height: 800px;
-        /* background-image: url(/images/background.jpg); */
-    }
     .image-section{
         width: 100%;
     }
@@ -32,11 +25,8 @@
 <body>
 
 <div class="container animated bounce">
-    <div class="text-center title">
-        <!-- <h3><%= title %></h3> -->
-    </div>
 
-    <div class="article-box">
+    <div class="article-box text-center">
         <% articles[id].urls.forEach(function(url){ %>
         
             <image class="image-section" src="<%= url %>"></image>

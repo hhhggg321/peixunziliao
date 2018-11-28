@@ -16,9 +16,13 @@
     }
 
     .section{
-        margin-top: 60px;
-        line-height: 50px;
-        font-size: 20px;
+        margin-top: 80px;
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .article-title{
+
     }
 
 </style>
@@ -26,15 +30,15 @@
 <body>
     <div class="container animated pulse text-center">
         <div class="title">
-            <h2>
+            <h1>
                 山西省2018年全省政务公开与信息编报暨</br>
                 电子政务工作培训班分享资料
-            </h2>
+            </h1>
         </div>
         <div class="section">
             <% articles.forEach(function(article){ %>
             
-                <div>
+                <div class="article-title">
                     <a href="/article/<%= article.id%>"><%= article.name %></a>
                 </div>
            
