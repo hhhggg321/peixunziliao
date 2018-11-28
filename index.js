@@ -33,8 +33,32 @@ var articles = [
             '/pdf/1/7.jpg',
         ]
     },
-    {id: 1, name: '公安厅'},
-    {id: 2, name: '农业厅'},
+    {
+        id: 1,
+        name: '公安厅',
+        urls: [
+            '/pdf/1/1.jpg',
+            '/pdf/1/2.jpg',
+            '/pdf/1/3.jpg',
+            '/pdf/1/4.jpg',
+            '/pdf/1/5.jpg',
+            '/pdf/1/6.jpg',
+            '/pdf/1/7.jpg',
+        ]
+    },
+    {
+        id: 2, 
+        name: '农业厅',
+        urls: [
+            '/pdf/1/1.jpg',
+            '/pdf/1/2.jpg',
+            '/pdf/1/3.jpg',
+            '/pdf/1/4.jpg',
+            '/pdf/1/5.jpg',
+            '/pdf/1/6.jpg',
+            '/pdf/1/7.jpg',
+        ]
+    },
 ];
 
 //响应首页get请求
