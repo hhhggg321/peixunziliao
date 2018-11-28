@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="Note">
+<head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/bower_components/animate/animate.min.css">
+
+</head>
+
+<style>
+
+    .title{
+        margin-top: 120px;
+    }
+
+    .section{
+        margin-top: 60px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+</style>
+
+<body>
+    <div class="container animated pulse text-center">
+        <div class="title">
+            <h2>
+                山西省2018年全省政务公开与信息编报暨</br>
+                电子政务工作培训班分享资料
+            </h2>
+        </div>
+        <div class="section">
+            <% articles.forEach(function(article){ %>
+            
+                <div>
+                    <a href="/article/<%= article.id%>"><%= article.name %></a>
+                </div>
+           
+            <% }); %>
+        </div>
+        
+    </div>
+</body>
+
+
+<%- include footer %>
