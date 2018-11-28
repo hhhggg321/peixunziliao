@@ -42,7 +42,7 @@ app.get('/article/:id',function(req, res){
     });
 });
 
-//监听3000端口
-app.listen(3000,function(req, res){
-    console.log('app is running at port 3000');
+//监听4200端口
+app.listen(4200,function(req, res){
+    console.log('app is running at port 4200');
 });
