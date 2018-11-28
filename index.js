@@ -20,7 +20,19 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(express.static(path.join(__dirname,'scripts')));
 
 var articles = [
-    {id: 0, name: '国土厅'},
+    {
+        id: 0, 
+        name: '国土厅',
+        urls: [
+            '/pdf/1/1.Jpeg',
+            '/pdf/1/2.Jpeg',
+            '/pdf/1/3.Jpeg',
+            '/pdf/1/4.Jpeg',
+            '/pdf/1/5.Jpeg',
+            '/pdf/1/6.Jpeg',
+            '/pdf/1/7.Jpeg',
+        ]
+    },
     {id: 1, name: '公安厅'},
     {id: 2, name: '农业厅'},
 ];
@@ -38,7 +50,8 @@ app.get('/article/:id',function(req, res){
     let id = req.params.id;
     res.render('detail',{
         id: id,
-        title: articles[id].name + '分享资料'
+        title: articles[id].name + '分享资料',
+        articles: articles
     });
 });
 

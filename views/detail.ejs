@@ -21,6 +21,13 @@
         height: 800px;
         /* background-image: url(/images/background.jpg); */
     }
+    .image-section{
+        width: 100%;
+    }
+    .divider{
+        width: 100%;
+        border-top: 2px solid gray;
+    }
 </style>
 <body>
 
@@ -30,13 +37,19 @@
     </div>
 
     <div class="article-box">
-        <div id="pdf_preview"></div>
+        <% articles[id].urls.forEach(function(url){ %>
+        
+            <image class="image-section" src="<%= url %>"></image>
+            <div class="divider"></div>
+        <% }); %>
+        
+        <!-- <div id="pdf_preview"></div> -->
         <!-- <div id="example1"></div> -->
     </div>
 </div>
 
 <!-- <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script> -->
-<script>
+<!-- <script>
     src = '/pdf/1.pdf';
     $('#pdf_preview').media(
     {
@@ -46,7 +59,7 @@
         src : src,
     });
     console.log('pdf');
-</script>
+</script> -->
 
 <%- include footer %>
 
