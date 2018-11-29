@@ -31,7 +31,9 @@ var articles = [
             '/pdf/1/5.jpg',
             '/pdf/1/6.jpg',
             '/pdf/1/7.jpg',
-        ]
+        ],
+        fileUrl: '/pdf/1.pdf',
+        fileName: '国土厅分享资料'
     },
     {
         id: 1,
@@ -44,7 +46,10 @@ var articles = [
             '/pdf/1/5.jpg',
             '/pdf/1/6.jpg',
             '/pdf/1/7.jpg',
-        ]
+        ],
+        fileUrl: '/pdf/1.pdf',
+        fileName: '公安厅分享资料'
+
     },
     {
         id: 2, 
@@ -57,7 +62,9 @@ var articles = [
             '/pdf/1/5.jpg',
             '/pdf/1/6.jpg',
             '/pdf/1/7.jpg',
-        ]
+        ],
+        fileUrl: '/pdf/1.pdf',
+        fileName: '农业厅分享资料'
     },
 ];
 

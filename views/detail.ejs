@@ -14,6 +14,12 @@
     
 </head>
 <style>
+    .title{
+        padding: 10px;
+        height: 60px;
+        background-color: #f0f0f0;
+        font-size: 30px;
+    }
     .image-section{
         width: 100%;
     }
@@ -25,6 +31,9 @@
 <body>
 
 <div class="container animated bounce">
+    <div class="title text-center">
+        <a href="<%= articles[id].fileUrl%>" download="<%= articles[id].fileName%>">点击下载文档</a>
+    </div>
 
     <div class="article-box text-center">
         <% articles[id].urls.forEach(function(url){ %>
