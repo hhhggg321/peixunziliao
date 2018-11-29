@@ -52,7 +52,8 @@
             <% articles.forEach(function(article){ %>
             
                 <div class="article-title">
-                    <a href="/article/<%= article.id%>"><%= article.name %></a>
+                    <a href="<%= article.fileUrl%>" download="<%= article.fileName%>"><%= article.name %></a>
+                    <!-- <a href="/article/<%= article.id%>"><%= article.name %></a> -->
                 </div>
            
             <% }); %>
