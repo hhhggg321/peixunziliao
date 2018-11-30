@@ -22,15 +22,15 @@ app.use(express.static(path.join(__dirname,'scripts')));
 var articles = [
     {
         id: 0, 
-        name: '省国土厅',
-        fileUrl: '/pdf/省国土厅.pdf',
-        fileName: '省国土厅交流分享资料'
+        name: '省自然资源厅',
+        fileUrl: '/pdf/省自然资源厅.pdf',
+        fileName: '省自然资源厅交流分享资料'
     },
     {
         id: 1, 
-        name: '省国税局',
-        fileUrl: '/pdf/省国税局.pdf',
-        fileName: '省国税局交流分享资料'
+        name: '山西省税务局',
+        fileUrl: '/pdf/山西省税务局.pdf',
+        fileName: '山西省税务局交流分享资料'
     },
     {
         id: 2, 
