@@ -22,56 +22,59 @@ app.use(express.static(path.join(__dirname,'scripts')));
 var articles = [
     {
         id: 0, 
-        name: '国土厅',
-        urls: [
-            '/pdf/1/1.jpg',
-            '/pdf/1/2.jpg',
-            '/pdf/1/3.jpg',
-            '/pdf/1/4.jpg',
-            '/pdf/1/5.jpg',
-            '/pdf/1/6.jpg',
-            '/pdf/1/7.jpg',
-        ],
-        fileUrl: '/pdf/1.pdf',
-        fileName: '国土厅分享资料'
+        name: '省国土厅',
+        fileUrl: '/pdf/省国土厅.pdf',
+        fileName: '省国土厅交流分享资料'
     },
     {
-        id: 1,
-        name: '公安厅',
-        urls: [
-            '/pdf/1/1.jpg',
-            '/pdf/1/2.jpg',
-            '/pdf/1/3.jpg',
-            '/pdf/1/4.jpg',
-            '/pdf/1/5.jpg',
-            '/pdf/1/6.jpg',
-            '/pdf/1/7.jpg',
-        ],
-        fileUrl: '/pdf/1.pdf',
-        fileName: '公安厅分享资料'
-
+        id: 1, 
+        name: '省国税局',
+        fileUrl: '/pdf/省国税局.pdf',
+        fileName: '省国税局交流分享资料'
     },
     {
         id: 2, 
-        name: '农业厅',
-        urls: [
-            '/pdf/1/1.jpg',
-            '/pdf/1/2.jpg',
-            '/pdf/1/3.jpg',
-            '/pdf/1/4.jpg',
-            '/pdf/1/5.jpg',
-            '/pdf/1/6.jpg',
-            '/pdf/1/7.jpg',
-        ],
-        fileUrl: '/pdf/1.pdf',
-        fileName: '农业厅分享资料'
+        name: '大同市',
+        fileUrl: '/pdf/大同市.pdf',
+        fileName: '大同市交流分享资料'
+    },
+    {
+        id: 3,
+        name: '晋中市',
+        fileUrl: '/pdf/晋中市.pdf',
+        fileName: '晋中市交流分享资料'
+
+    },
+    {
+        id: 4, 
+        name: '万柏林区',
+        fileUrl: '/pdf/万柏林区.pdf',
+        fileName: '万柏林区交流分享资料'
+    },
+    {
+        id: 5, 
+        name: '介休市',
+        fileUrl: '/pdf/介休市.pdf',
+        fileName: '介休市交流分享资料'
+    },
+    {
+        id: 6, 
+        name: '左权县',
+        fileUrl: '/pdf/左权县.pdf',
+        fileName: '左权县交流分享资料'
+    },
+    {
+        id: 7, 
+        name: '孝义市',
+        fileUrl: '/pdf/孝义市.pdf',
+        fileName: '孝义市交流分享资料'
     },
 ];
 
 //响应首页get请求
 app.get('/',function(req, res){
     res.render('index',{
-        title: '首页',
+        title: '山西省2018年全省政务公开与信息编报暨电子政务工作培训班',
         articles: articles
     });
 });

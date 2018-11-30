@@ -11,6 +11,14 @@
 
 <style>
 
+    .body-back{
+        height: 2000px;
+        width: 100%;
+        background-image: url(images/back1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
     .title{
         margin-top: 45%;
         font-size: 40px;
@@ -18,23 +26,27 @@
         line-height: 55px;
     }
 
-    .section{
+    .file{
         margin-top: 80px;
-        line-height: 80px;
+    }
+
+    .whole-file{
         font-size: 35px;
         font-weight: 500;
     }
 
-    .article-title{
-
+    .share-file{
+        margin-top: 80px;
+        font-size: 35px;
+        color: gray;
+        font-weight: 500;
     }
 
-    .body-back{
-        height: 2000px;
-        width: 100%;
-        background-image: url(images/back1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+    .share-section{
+        margin-top: 30px;
+        line-height: 90px;
+        font-size: 30px;
+        font-weight: 500;
     }
 
 </style>
@@ -45,18 +57,28 @@
             山西省2018年全省政务公开与信息编报暨</br>
             电子政务工作培训班分享资料
         </div>
-        <div class="section">
-            <div>
-                <a href="/pdf/1.pdf" download="培训资料汇编">培训资料汇编</a>
+
+        <div class="file">
+
+            <div class="whole-file">
+                <a href="/pdf/培训资料汇编.pdf" download="培训资料汇编">培训资料汇编</a>
             </div>
-            <% articles.forEach(function(article){ %>
+
+            <div class="share-file">
+                <span>交流分享资料</span>
+            </div>
+
+            <div class="share-section">
+                <% articles.forEach(function(article){ %>
             
-                <div class="article-title">
-                    <a href="<%= article.fileUrl%>" download="<%= article.fileName%>"><%= article.name %></a>
-                    <!-- <a href="/article/<%= article.id%>"><%= article.name %></a> -->
-                </div>
-           
-            <% }); %>
+                    <div class="article-title">
+                        <a href="<%= article.fileUrl%>" download="<%= article.fileName%>"><%= article.name %></a>
+                        <!-- <a href="/article/<%= article.id%>"><%= article.name %></a> -->
+                    </div>
+               
+                <% }); %>
+            </div>
+
         </div>
         
     </div>
